@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="centered", page_title="Анализ навыков")
 
 st.markdown(
     """
@@ -84,7 +84,7 @@ with main_content:
         xaxis=dict(tickangle=-45)
     )
 
-    st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
+    st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False, 'scrollZoom': False})
     st.write("---")
     st.subheader("Оценка гипотезы по результатам анализа")
 
