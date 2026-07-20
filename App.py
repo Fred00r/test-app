@@ -72,16 +72,15 @@ with main_content:
     with col_center:
         st.subheader("Анализ устойчивости навыков к автоматизации")
 
-    
     fig = px.bar(
-    df,
-    x="Навык",
-    y="Устойчивость к ИИ (1-10)",
-    color="Устойчивость к ИИ (1-10)",
-    hover_data=["Тип"],
-    color_continuous_scale="Viridis",
-    template="plotly_dark"
-)
+        df,
+        x=df.index,
+        y="Устойчивость",
+        color="Устойчивость",
+        color_continuous_scale="Viridis",
+        template="plotly_dark"
+    )
+    
     fig.update_layout(
         xaxis_title=dict(text="<b>Навык</b>", font=dict(size=14)),
         yaxis_title=dict(text="<b>Шкала устойчивости (1-10)</b>", font=dict(size=14)),
