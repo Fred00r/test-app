@@ -2,6 +2,24 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+st.set_page_config(layout="wide")
+
+st.markdown(
+    """
+    <style>
+    /* Убираем отображение скрепки, не влияя на текст заголовка */
+    [data-testid="stHeaderActionElements"] {
+        display: none !important;
+    }
+
+    /* Дополнительная защита: блокировка ссылок внутри заголовков */
+    h1 a, h2 a, h3 a {
+        display: none !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.markdown(
     """
     <style>
