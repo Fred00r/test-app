@@ -67,7 +67,8 @@ with main_content:
         "Тип": ["Hard", "Hard", "Soft", "AI-навык", "Hard"],
         "Устойчивость": [10, 9, 10, 8, 2]
     }
-    df = pd.DataFrame(data).set_index("Навык")
+    df = pd.DataFrame(data)
+    df["Навык_с_типом"] = df["Навык"] + " (" + df["Тип"] + ")"
 
     _, col_center, _ = st.columns([2, 7, 1])
     with col_center:
