@@ -76,7 +76,7 @@ with main_content:
 
     fig = px.bar(
         df,
-        x=df.index,
+        x="Навык_с_типом",
         y="Устойчивость",
         color="Устойчивость",
         color_continuous_scale="Viridis",
