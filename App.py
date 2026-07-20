@@ -92,7 +92,7 @@ with main_content:
             'scrollZoom': False,
             'doubleClick': False,
             'showTips': False,
-            'edits': {'legendPosition': False}
+            'staticPlot': True
         }
     )
     st.write("---")
