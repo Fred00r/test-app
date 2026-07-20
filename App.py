@@ -77,6 +77,7 @@ with main_content:
         x=df.index,
         y="Устойчивость",
         color="Устойчивость",
+        hover_data=["ТВОЙ_СТОЛБЕЦ_СО_СКИЛЛАМИ"], # Добавит категорию в подсказку при наведении
         color_continuous_scale="Viridis",
         template="plotly_dark"
     )
