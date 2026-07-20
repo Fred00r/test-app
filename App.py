@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 st.set_page_config(
-    page_title="Анализ навыков 2026–2031", 
-    page_icon="🚀"
+    page_title="Анализ навыков 2026", 
+    page_icon="📈"
 )
 st.set_page_config(layout="centered", page_title="Анализ навыков")
 
