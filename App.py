@@ -84,7 +84,7 @@ with main_content:
         xaxis=dict(tickangle=-45)
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
     st.write("---")
     st.subheader("Оценка гипотезы по результатам анализа")
 
