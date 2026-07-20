@@ -84,7 +84,17 @@ with main_content:
         xaxis=dict(tickangle=-45)
     )
 
-    st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False, 'scrollZoom': False})
+    st.plotly_chart(
+        fig,
+        use_container_width=True,
+        config={
+            'displayModeBar': False,  # Убирает панель инструментов с кнопками
+            'scrollZoom': False,  # Отключает зум колесиком мыши
+            'doubleClick': False,  # Отключает возврат по двойному клику
+            'showTips': False,  # Отключает подсказки Plotly
+            'staticPlot': True  # Полностью делает график статичным
+        }
+    )
     st.write("---")
     st.subheader("Оценка гипотезы по результатам анализа")
 
