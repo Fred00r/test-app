@@ -88,11 +88,11 @@ with main_content:
         fig,
         use_container_width=True,
         config={
-            'displayModeBar': False,  # Убирает панель инструментов с кнопками
-            'scrollZoom': False,  # Отключает зум колесиком мыши
-            'doubleClick': False,  # Отключает возврат по двойному клику
-            'showTips': False,  # Отключает подсказки Plotly
-            'staticPlot': True  # Полностью делает график статичным
+            'displayModeBar': False,
+            'scrollZoom': False,
+            'doubleClick': False,
+            'showTips': False,
+            'edits': {'legendPosition': False}
         }
     )
     st.write("---")
